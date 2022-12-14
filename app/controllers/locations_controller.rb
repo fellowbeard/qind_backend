@@ -1,5 +1,6 @@
 class LocationsController < ApplicationController
   def index
+    render json: Location.all
   end
 
   def create
@@ -11,7 +12,7 @@ class LocationsController < ApplicationController
   def update
   end
 
-  def destoy
+  def destroy
   end
 
 end
